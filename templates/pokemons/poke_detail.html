@@ -1,0 +1,18 @@
+{% include 'header_and_footer/header.html' %}
+<center>
+<div class="card" style="width: 18rem;">
+  <img src="{{film_id.image.url}}" class="card-img-top" alt="...">
+  <div class="card-body">
+    <img src="{{poke_id.image.url}}" class="card-img-top" alt="Изображение">
+    <p class="card-text">Name - {{poke_id.name}}</p>
+    <p class="card-text">Region - {{poke_id.region}}</p>
+    <p class="card-text">Type - {{poke_id.type}}</p>
+    <p class="card-text">Second type - {{poke_id.second_type}}</p>
+    <p class="card-text">Number - {{poke_id.number}}</p>
+    <p class="card-text">Description: {{poke_id.description}}</p>
+    <p class="card-text">{{poke_id.created_at}}</p>
+  </div>
+</div>
+</center>
+
+{% include 'header_and_footer/footer.html' %}
