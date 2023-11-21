@@ -53,6 +53,13 @@ class PokeModel(models.Model):
 
     def __str__(self):
         return f'{self.name}-{self.region}'
+class Afisha(models.Model):
+    name = models.CharField(max_length=100)
+    number = models.PositiveIntegerField(default=1)
+    region = models.CharField(max_length=100)
+
+    def __str__(self):
+        return self.name
 
 class Slider(models.Model):
     slider = models.URLField()

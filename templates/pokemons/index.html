@@ -19,6 +19,26 @@
 
   </div>
 </div>
+<h1 class="mt-4">Афиша киносеансов</h1>
+    <table class="table table-bordered table-striped">
+        <thead>
+            <tr>
+                <th>Имя</th>
+                <th>Номер</th>
+                <th>Регион</th>
+            </tr>
+        </thead>
+        <tbody>
+        {% for i in afisha_list %}
+            <tr>
+                <td>{{i.name}}</td>
+                <td>{{i.number}}</td>
+                <td>{{i.region}}</td>
+            </tr>
+        {% endfor %}
+        </tbody>
+    </table>
+
 <!--Слайдеры-->
 <h2 class="mt-4 text-center">Популярные покемоны</h2>
  <div id="myCarousel" class="carousel slide" data-ride="carousel">
